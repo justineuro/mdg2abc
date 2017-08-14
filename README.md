@@ -13,7 +13,7 @@ This directory includes:
 - [mdg2AllNoX.sh](./mdg2AllNoX.sh) - a Bash script similar to [mdg2abc.sh](./mdg2abc.sh); in addition to the particular MDG score requested in ABC notation, the corresponding MIDI, SVG, Postscript, and PDF files are also created;  the tail part of this script can be easily edited to create only some of these [abcm2ps](http://moinejf.free.fr/) processed files
 - [mdg2abcRndN.sh](./mdg2abcRndN.sh) - A Bash script that generates the musical score in ABC notation of *N* (a counting number) randomly-generated MDG minuets
 - [mdg2midRndN.sh](./mdg2midRndN.sh) - similar to [mdg2abcRndN.sh](./mdg2abcRndN.sh) where the corresponding MIDI output are also created 
-- [samples](./samples) - also accessible at [samples](https://justineuro.github.io/mdg2abc/samples/); a folder containing samples of generated MDG minuets written in ACB music notation, and the corresponding audio (MIDI) and images (SVG, PDF, Postscript)
+- [samples](./samples) - also accessible at [samples](https://justineuro.github.io/mdg2abc/samples/); a folder containing samples of generated MDG minuets written in ABC music notation, and the corresponding audio (MIDI) and images (SVG, PDF, Postscript)
 - [res](./res) - also accessible at [res](https://justineuro.github.io/mdginabc2svg/res/); a folder containing the measures of *Musikalisches Würfelspiel, K.516f* written in ABC notation and other related files 
 
 To use the `mdg2abc.sh` Bash script, at the command line type:
@@ -29,14 +29,15 @@ where `n1, n2, ..., n16` are any of the 11 possible outcomes of the toss of two 
 ```
 The output will be the file `K516f-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3.abc`, containing the score of the MDG minuet corresponding to the 16 outcomes given at the command line (all tosses came up a 3), and will be created under the current working directory.  Please see the [`samples`](./samples/index.md) folder in this directory for more samples.
 
-To use the scripts for generating a random number of MDG minuets, put the `mdg2abcRndN.sh` and `mdg2abc.sh` in the same directory (folder) that will contain the ABC files, `cd` (change directory) to that folder, then: 
+### Using `mdg2abcRndN.sh` and `mdg2midRndN.sh`
+To use the scripts for generating a requested number of randomly-generated of MDG minuets: 
+
+* [mdg2abcRndN.sh](./mdg2abcRndN.sh) - for generating only the ABC files, `put `mdg2abcRndN.sh` and `mdg2abc.sh` in the same directory (folder) that will contain the ABC files, `cd` (change directory) to that folder, then: 
 
 ```
 ./mdg2abcRndN.sh <numberOfMDGsToMake>
 ```
-
-
-Or, to create the ABC and MIDI files of randomly generated MDG minuets in a chosen folder (directory), put the `mdg2abcRndN.sh` and `mdg2mid.sh` in that same directory (folder), `cd` (change directory) to that folder, then:
+* [mdg2midRndN.sh](./mdg2midRndN.sh) - to create both the ABC and MIDI files of randomly generated MDG minuets in a chosen folder (directory), put the `mdg2abcRndN.sh` and `mdg2mid.sh` in that directory (folder), `cd` (change directory) to that folder, then:
  
 ```
 ./mdg2midRndN.sh <numnberOfMDGsToMake>

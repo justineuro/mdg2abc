@@ -29,18 +29,21 @@ where `n1, n2, ..., n16` are any of the 11 possible outcomes of the toss of two 
 ```
 The output will be the file `K516f-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3.abc`, containing the score of the MDG minuet corresponding to the 16 outcomes given at the command line (all tosses came up a 3), and will be created under the current working directory.  Please see the [`samples`](./samples/index.md) folder in this directory for more samples.
 
-To use the scripts for generating a random number of MDG minuets, put the `mdg2abcRndN.sh` and `mdg2abc.sh` in the same directory (folder) that will contain the ABC files, `cd` (change directory) to that folder, then: 
+### Using `mdg2abcRndN.sh` and `mdg2midRndN.sh`
+To use the scripts for generating a requested number of randomly-generated of MDG minuets: 
+
+* [mdg2abcRndN.sh](./mdg2abcRndN.sh) - for generating only the ABC files, `put `mdg2abcRndN.sh` and `mdg2abc.sh` in the same directory (folder) that will contain the ABC files, `cd` (change directory) to that folder, then: 
 
 ```
 ./mdg2abcRndN.sh <numberOfMDGsToMake>
 ```
-
-
-Or, to create the ABC and MIDI files of randomly generated MDG minuets in a chosen folder (directory), put the `mdg2abcRndN.sh` and `mdg2mid.sh` in that same directory (folder), `cd` (change directory) to that folder, then:
+* [mdg2midRndN.sh](./mdg2midRndN.sh) - to create both the ABC and MIDI files of randomly generated MDG minuets in a chosen folder (directory), put the `mdg2abcRndN.sh` and `mdg2mid.sh` in that directory (folder), `cd` (change directory) to that folder, then:
  
 ```
 ./mdg2midRndN.sh <numnberOfMDGsToMake>
 ```
+
+A [related Bash script](https://github.com/justineuro/mdginabc2svg) that generates XHTML files that contain the musical scores and audio (plays when the image is clicked-on or tapped) of MDG minuets can be found at the GitHub site [mdginabc2svg](https://github.com/justineuro/mdginabc2svg) or its GitHub Pages Site at [mdginabc2svg](https://justineuro.github.io/mdginabc2svg/).
 
 A [related Bash script](https://github.com/justineuro/mdginabc2svg) that generates XHTML files that contain the musical scores and audio (plays when the image is clicked-on or tapped) of MDG minuets can be found at the GitHub site [mdginabc2svg](https://github.com/justineuro/mdginabc2svg) or its GitHub Pages Site at [mdginabc2svg](https://justineuro.github.io/mdginabc2svg/).
 
