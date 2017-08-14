@@ -14,10 +14,10 @@
 #		Simrock).  
 #
 #      AUTHOR:	J.L.A. Uro (justineuro@gmail.com)
-#     VERSION:	1.0
+#     VERSION:	1.0.1
 #     LICENSE:	Creative Commons Attribution 4.0 International License (CC-BY)
 #     CREATED:	2017.08.12 14:30:55 +8
-#    REVISION:	
+#    REVISION:	2017.08.14 13:14:36 +8
 #==================================================================================
 
 #----------------------------------------------------------------------------------
@@ -28,14 +28,13 @@ genS() { # $RANDOM randomly generates an integer from 0 to 32767
 }
 
 #----------------------------------------------------------------------------------
-# declare the variables "diceS" and "measNR" as arrays
+# declare the variable "diceS" as an array
 # diceS - array containing the 16 outcomes from input line
-# measNR - array of all possible measure notes for a specific outcome
 #----------------------------------------------------------------------------------
 declare -a diceS
 
 #----------------------------------------------------------------------------------
-# generate the N random minuets
+# generate the <num> random minuets
 #----------------------------------------------------------------------------------
 i=1
 while [ $i -le $1 ]; do
