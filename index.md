@@ -9,8 +9,8 @@ This directory includes:
 - [mdg2abc.sh](./mdg2abc.sh) - a Bash script for generating the musical score, written in ABC, of an MDG minuet corresponding to any sequence of 16 tosses of a pair of dice
 - [mdg2abc2-sm.sh](./mdginabc2svg-sm.sh) - similar to [mdg2abc.sh](./mdg2abc.sh) but smaller images are created when processed
 - [mdg2abc-tab2.sh](./mdg2abc-tab2.sh) - similar to [mdg2abc.sh](./mdg2abc.sh) but coded with tabs of width 2 instead of 8 spaces
-- [mdg2mid.sh](./mdg2mid.sh) - a Bash script for generating the musical score, written in ABC, and MIDI (using [`abc2midi`](http://abc.sourceforge.net/abcMIDI)) of an MDG minuet corresponding to any sequence of 16 tosses of a pair of dice
-- [mdg2AllNoX.sh](./mdg2AllNoX.sh) - a Bash script similar to [mdg2abc.sh](./mdg2abc.sh); in addition to the particular MDG score requested in ABC notation, the corresponding MIDI, SVG, Postscript, and PDF files are also created;  the tail part of this script can be easily edited to create onlt some of these [abcm2ps](http://moinejf.free.fr/) processed files
+- [mdg2mid.sh](./mdg2mid.sh) - a Bash script for generating the musical score, written in ABC, and MIDI (using [`abc2midi`](http://abc.sourceforge.net/abcMIDI)) of an MDG minuet corresponding to any sequence of 16 tosses of a pair of dice; [abcmidi](http://abc.sourceforge.net/abcMIDI) has to be installed beforehand
+- [mdg2AllNoX.sh](./mdg2AllNoX.sh) - a Bash script similar to [mdg2abc.sh](./mdg2abc.sh); in addition to the particular MDG score requested in ABC notation, the corresponding MIDI, SVG, Postscript, and PDF files are also created;  the tail part of this script can be easily edited to create onlt some of these [abcm2ps](http://moinejf.free.fr/)-created files
 - [mdg2abcRndN.sh](./mdg2abcRndN.sh) - A Bash script that generates the musical score in ABC notation of *N* (a counting number) randomly-generated MDG minuets
 - [mdg2midRndN.sh](./mdg2midRndN.sh) - similar to [mdg2abcRndN.sh](./mdg2abcRndN.sh) where the corresponding MIDI output are also created 
 - [samples](./samples) - a folder containing samples of generated MDG minuets written in ACB music notation, and the corresponding audio (MIDI) and images (SVG, PDF, Postscript)
@@ -42,6 +42,7 @@ To use the scripts for generating a requested number of randomly-generated of MD
 ```
 ./mdg2midRndN.sh <numnberOfMDGsToMake>
 ```
+Note that [abcmidi](http://abc.sourceforge.net/abcMIDI) has to be installed beforehand.
 
 A [related Bash script](https://github.com/justineuro/mdginabc2svg) that generates XHTML files that contain the musical scores and audio (plays when the image is clicked-on or tapped) of MDG minuets can be found at the GitHub site [mdginabc2svg](https://github.com/justineuro/mdginabc2svg) or its GitHub Pages Site at [mdginabc2svg](https://justineuro.github.io/mdginabc2svg/).
 
