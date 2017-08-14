@@ -39,7 +39,7 @@ To use the scripts for generating a random number of MDG minuets, put the `mdg2a
 Or, to create the ABC and MIDI files of randomly generated MDG minuets in a chosen folder (directory), put the `mdg2abcRndN.sh` and `mdg2mid.sh` in that same directory (folder), `cd` (change directory) to that folder, then:
  
 ```
-./mdg2midRndN.sh <numnberOfMDGSToMake>
+./mdg2midRndN.sh <numnberOfMDGsToMake>
 ```
 
 ## Acknowledgements
