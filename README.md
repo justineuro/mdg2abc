@@ -29,7 +29,8 @@ where `n1, n2, ..., n16` are any of the 11 possible outcomes of the toss of two 
 ```
 The output will be the file `K516f-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3.abc`, containing the score of the MDG minuet corresponding to the 16 outcomes given at the command line (all tosses came up a 3), and will be created under the current working directory.  Please see the [`samples`](./samples/index.md) folder in this directory for more samples.
 
-### Using <span style="background: white; width: auto; display:inline-block; padding-left:1%; padding-right:1%"> mdg2abcRndN.sh </span> and <span style="background: white; width: auto; display:inline-block; padding-left:1%; padding-right:1%"> mdg2midRndN.sh </span>To use the scripts for generating a requested number of randomly-generated of MDG minuets: 
+### Using <span style="background: white; width: auto; display:inline-block; padding-left:1%; padding-right:1%"> mdg2abcRndN.sh </span> and <span style="background: white; width: auto; display:inline-block; padding-left:1%; padding-right:1%"> mdg2midRndN.sh </span>
+To use the scripts for generating a requested number of randomly-generated of MDG minuets: 
 
 * [mdg2abcRndN.sh](./mdg2abcRndN.sh) - for generating only the ABC files, put `mdg2abcRndN.sh` and `mdg2abc.sh` in the same directory (folder) that will contain the ABC files, `cd` (change directory) to that folder, then: 
 
