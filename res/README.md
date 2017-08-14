@@ -1,7 +1,3 @@
----
-layout: default
----
-
 ## <span style="background: white; width: auto; display:inline-block; padding-left:1%; padding-right:1%"> res </span> folder
 This is `README.md (or index.md)` file in the `res` folder.  The `res` folder contains files that relate to the ABC transcription of [*Musikalisches Würfelspiel, K.516f*](http://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)) score from [International Music Score Library Project (IMSLP)](http://imslp.org/).
  

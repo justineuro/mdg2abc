@@ -1,7 +1,3 @@
----
-layout: default
----
-
 ## <span style="background: white; width: auto; display:inline-block; padding-left:1%; padding-right:1%"> samples </span> folder
 This is `index.md` file in the `samples` folder.
 
