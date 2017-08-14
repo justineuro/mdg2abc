@@ -46,7 +46,7 @@ while [ $i -le $1 ]; do
 	done
 
 #----------------------------------------------------------------------------------
-# generate a minuet in ABC for the current diceS using mdg2mid.sh
+# generate a minuet in ABC and MIDI for the current diceS using mdg2mid.sh
 #----------------------------------------------------------------------------------
 	./mdg2mid.sh ${diceS[*]}
 	i=`expr $i + 1`
@@ -54,5 +54,3 @@ done
 #
 ##
 ####
-
-
