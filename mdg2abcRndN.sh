@@ -14,10 +14,10 @@
 #		Simrock).  
 #
 #      AUTHOR:	J.L.A. Uro (justineuro@gmail.com)
-#     VERSION:	1.0.1
+#     VERSION:	1.0.2
 #     LICENSE:	Creative Commons Attribution 4.0 International License (CC-BY)
 #     CREATED:	2017.08.12 14:30:55 +8
-#    REVISION:	2017.08.14 13:14:36 +8
+#    REVISION:	2017.08.15 15:38:29 +8
 #==================================================================================
 
 #----------------------------------------------------------------------------------
@@ -46,7 +46,7 @@ while [ $i -le $1 ]; do
 	done
 
 #----------------------------------------------------------------------------------
-# generate a minuet in ABC for the current diceS using mdg2abc.sh
+# generate a minuet in ABC notation for the current diceS using mdg2abc.sh
 #----------------------------------------------------------------------------------
 	./mdg2abc.sh ${diceS[*]}
 	i=`expr $i + 1`
