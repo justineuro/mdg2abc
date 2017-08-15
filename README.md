@@ -51,7 +51,7 @@ A [related Bash script](https://github.com/justineuro/mdginabc2svg) that generat
 ### Using <span style="background: white; width: auto; display:inline-block; padding-left:1%; padding-right:1%"> mdg2abcList.sh </span> and <span style="background: white; width: auto; display:inline-block; padding-left:1%; padding-right:1%"> mdg2midList.sh </span>
 To use the scripts for generating MDG minuets for 16-toss outcomes provided, one 16-sequence per line, in a text file (say, `listfile.txt`):
 
-* [mdg2abcLst.sh](./mdg2abcList.sh) - for generating only the ABC files, put `listfile.txt`, `mdg2abcList.sh`, and `mdg2abc.sh` in the same directory (folder) that will contain the ABC files, `cd` (change directory) to that folder, then: 
+* [mdg2abcList.sh](./mdg2abcList.sh) - for generating only the ABC files, put `listfile.txt`, `mdg2abcList.sh`, and `mdg2abc.sh` in the same directory (folder) that will contain the ABC files, `cd` (change directory) to that folder, then: 
 
 ```
 ./mdg2abcList.sh listfile.txt
