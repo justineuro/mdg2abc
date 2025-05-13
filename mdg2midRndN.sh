@@ -23,7 +23,7 @@
 #----------------------------------------------------------------------------------
 # define the function genS() that randomly chooses an integer from 1 to 6, inclusive,
 #----------------------------------------------------------------------------------
-genS() { # RANDOM randomly generates an integer from 0 to 32765 (max: 32767)
+genS() { # RANDOM randomly generates an integer from 0 to 32767 (max: -le 32765)
 	rnd=32767
 	until [ $rnd -le 32765 ]
 	do
