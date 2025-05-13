@@ -14,26 +14,26 @@
 #		Simrock).  
 #
 #      AUTHOR:	J.L.A. Uro (justineuro@gmail.com)
-#     VERSION:	1.0.2
+#     VERSION:	1.0.3
 #     LICENSE:	Creative Commons Attribution 4.0 International License (CC-BY)
 #     CREATED:	2017.08.12 14:30:55 +8
-#    REVISION:	2017/11/20 15:35:58
+#    REVISION:	2025/05/13 15:46:54
 #==================================================================================
 
 #----------------------------------------------------------------------------------
-# define the function genS() that randomly chooses an integer from 2 to 12, inclusive
+# define the function genS() that randomly chooses an integer from 1 to 6, inclusive,
 #----------------------------------------------------------------------------------
-genS() { # RANDOM randomly generates an integer from 0 to 32767
-	rnd=32768
-	until [ $rnd -lt 32758 ]
+genS() { # RANDOM randomly generates an integer from 0 to 32767 (max: -le 32765)
+	rnd=32767
+	until [ $rnd -le 32765 ]
 	do
 		rnd=$[RANDOM]
-		if [ $rnd -lt 32758 ]; then echo $[rnd%11+2]; fi
+		if [ $rnd -le 32765 ]; then echo $[rnd%6+1]; fi
 	done
 }
 
 #----------------------------------------------------------------------------------
-# declare the variable "diceS" as an array
+# declare the variables "diceS" as an array
 # diceS - array containing the 16 outcomes from input line
 #----------------------------------------------------------------------------------
 declare -a diceS
@@ -47,7 +47,7 @@ while [ $i -le $1 ]; do
 # generate the random 16-sequence of outcomes of the 16 throws of two dice
 #----------------------------------------------------------------------------------
 	for j in {0..15}; do
-		diceS[$j]=`genS`
+		diceS[$j]=$((`genS` + `genS`))
 	done
 
 #----------------------------------------------------------------------------------
