@@ -2,8 +2,7 @@
 
 [**mdg2abc.sh**](https://github.com/justineuro/mdg2abc) is a [Bash](https://www.gnu.org/software/bash/) script (see [Wikipedia:Bash\_(Unix_shell)](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) for more info) that can be used for creating a musical score, written in [ABC music notation](http://www.abcnotation.com), of a particular [Musical Dice Game (MDG)](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel) minuet, generated based on the rules given in  [Musikalisches Würfelspiel, K.516f (Mozart, Wolfgang Amadeus)](http://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)). 
  
-To view the generated musical score, one can process it using [`abcm2ps`](http://moinejf.free.fr/) to produce images in Postscript, PDF, and SVG formats.  Another possibility is to use the [abcmplugin.so](http://moinejf.free.fr/) browser plugin and open the ABC file in a web browser (works with Mozilla). 
-
+To view the generated musical score, one can process it using [`abcm2ps`](http://moinejf.free.fr/) to produce images in Postscript, PDF, SVG, or XHTML formats.  
 This directory includes:
 
 - [mdg2abc.sh](./mdg2abc.sh) - a Bash script for generating the musical score, written in ABC, of an MDG minuet corresponding to any sequence of 16 tosses of a pair of dice
