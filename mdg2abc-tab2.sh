@@ -1,9 +1,9 @@
 #!/bin/bash
 #===================================================================================
 #
-#				 FILE:	mdg2abc.sh
+#				 FILE:	mdg2abc-tab2.sh
 #
-#			  USAGE:	mdg2abc.sh n1 n2 n3 n4 n5 n6 n7 n8 n9 n10 n11 n12 n13 n14 n15 n16
+#			  USAGE:	mdg2abc-tab2.sh n1 n2 n3 n4 n5 n6 n7 n8 n9 n10 n11 n12 n13 n14 n15 n16
 #
 #								where n1-n16 are any of the 11 possible outcomes of a toss of
 #								two ordinary six-sided dice, e.g., n1-n16 are 16 integers, not necessarily 
@@ -92,6 +92,11 @@ if [ "${diceS[15]}" = "11" ]; then diceS15="3"; fi
 if [ "${diceS[15]}" = "12" ]; then diceS15="2"; fi
 # compute generic index number (permutation: 1 to 11^14*2 = 759 499 667 166 482)
 dbNum=$(( ${diceS[0]}-1 +(${diceS[1]}-2)*11 +(${diceS[2]}-2)*11**2 +(${diceS[3]}-2)*11**3 +(${diceS[4]}-2)*11**4 +(${diceS[5]}-2)*11**5 +(${diceS[6]}-2)*11**6 +(${diceS[8]}-2)*11**7 +(${diceS[9]}-2)*11**8 +(${diceS[10]}-2)*11**9 +(${diceS[11]}-2)*11**10 +(${diceS[12]}-2)*11**11 +(${diceS[13]}-2)*11**12 +(${diceS[14]}-2)*11**13 +($diceS15-2)*11**14 ))
+# ALTERNATIVELY, comment out all three conditionals above then use:
+#if [ "${diceS[15]}" == "11" ]; then 
+#	dbNum=$(( 11**14 + dbNum ))
+#fi
+
 
 #----------------------------------------------------------------------------------
 # calculate permutation number for the current dice toss (from 11^14 possibilities)
