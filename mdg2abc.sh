@@ -15,10 +15,10 @@
 #		Simrock). (smaller image)
 #
 #      AUTHOR:	J.L.A. Uro (justineuro@gmail.com)
-#     VERSION:	1.0.2
+#     VERSION:	1.0.3
 #     LICENSE:	Creative Commons Attribution 4.0 International License (CC-BY)
 #     CREATED:	12.08.2017 09:24:39
-#    REVISION:	2025/05/15 09:37:28
+#    REVISION:	2025/05/15 10:40:41
 #==================================================================================
 
 #----------------------------------------------------------------------------------
@@ -92,7 +92,8 @@ if [ "${diceS[15]}" = "11" ]; then diceS15="3"; fi
 if [ "${diceS[15]}" = "12" ]; then diceS15="2"; fi
 # compute generic index number (permutation: 1 to 11^14*2 = 759 499 667 166 482)
 dbNum=$(( ${diceS[0]}-1 +(${diceS[1]}-2)*11 +(${diceS[2]}-2)*11**2 +(${diceS[3]}-2)*11**3 +(${diceS[4]}-2)*11**4 +(${diceS[5]}-2)*11**5 +(${diceS[6]}-2)*11**6 +(${diceS[8]}-2)*11**7 +(${diceS[9]}-2)*11**8 +(${diceS[10]}-2)*11**9 +(${diceS[11]}-2)*11**10 +(${diceS[12]}-2)*11**11 +(${diceS[13]}-2)*11**12 +(${diceS[14]}-2)*11**13 +($diceS15-2)*11**14 ))
-# ALTERNATIVELY, comment out all three conditionals above then use:
+# ALTERNATIVELY, comment out all three conditionals above and dbNum formula then use:
+#dbNum=$(( ${diceS[0]}-1 +(${diceS[1]}-2)*11 +(${diceS[2]}-2)*11**2 +(${diceS[3]}-2)*11**3 +(${diceS[4]}-2)*11**4 +(${diceS[5]}-2)*11**5 +(${diceS[6]}-2)*11**6 +(${diceS[8]}-2)*11**7 +(${diceS[9]}-2)*11**8 +(${diceS[10]}-2)*11**9 +(${diceS[11]}-2)*11**10 +(${diceS[12]}-2)*11**11 +(${diceS[13]}-2)*11**12 +(${diceS[14]}-2)*11**13 ))
 #if [ "${diceS[15]}" == "11" ]; then 
 #	dbNum=$(( 11**14 + dbNum ))
 #fi
